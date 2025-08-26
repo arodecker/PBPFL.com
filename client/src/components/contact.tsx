@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p className="text-blue-100">(561) 555-0123</p>
+                <p className="text-blue-100">(714) 444-2727</p>
               </div>
             </div>
             
@@ -64,7 +64,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-blue-100">info@pbpfl.com</p>
+                <p className="text-blue-100">jreed@ocmortgage.com</p>
               </div>
             </div>
             
@@ -81,7 +81,7 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <div className="bg-white text-pb-blue rounded-full p-3 mr-4">
                 <Clock className="h-5 w-5" />
               </div>
@@ -92,7 +92,7 @@ export default function Contact() {
                   Sat: 10AM-4PM
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           
           <div className="bg-white rounded-xl p-6">
