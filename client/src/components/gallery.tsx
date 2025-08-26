@@ -29,12 +29,6 @@ export default function Gallery() {
           </div>
           
           <div className="bg-gray-100 rounded-xl p-8 text-center">
-            <Sofa className="w-12 h-12 text-pb-blue mb-4 mx-auto" />
-            <p className="text-gray-600">Renovated Units</p>
-            <p className="text-sm text-gray-500 mt-2">(Images will be provided)</p>
-          </div>
-          
-          <div className="bg-gray-100 rounded-xl p-8 text-center">
             <Leaf className="w-12 h-12 text-pb-green mb-4 mx-auto" />
             <p className="text-gray-600">Patio Areas</p>
             <p className="text-sm text-gray-500 mt-2">(Images will be provided)</p>
