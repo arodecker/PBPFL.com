@@ -1,4 +1,5 @@
-import { ShoppingBag, Car, Zap, Waves } from 'lucide-react';
+import { ShoppingBag, Car, Zap, Waves, Coffee, MapPin } from 'lucide-react';
+import poiMap from '@assets/POI-map_1756253610159.jpg';
 
 export default function Location() {
   return (
@@ -38,32 +39,32 @@ export default function Location() {
               <h3 className="text-2xl font-bold text-pb-gray mb-6">You're Close to Everything</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <div className="bg-pb-blue text-white rounded-full p-2 mr-4">
-                    <ShoppingBag className="h-5 w-5" />
+                  <div className="bg-pb-green text-white rounded-full p-2 mr-4">
+                    <Zap className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pb-gray">Shopping Outlets</h4>
-                    <p className="text-gray-600">Adjacent to premium outlet shopping</p>
+                    <h4 className="font-semibold text-pb-gray">Bear Lakes Country Club</h4>
+                    <p className="text-gray-600">World-class golf course nearby</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="bg-pb-green text-white rounded-full p-2 mr-4">
-                    <Car className="h-5 w-5" />
+                  <div className="bg-pb-blue text-white rounded-full p-2 mr-4">
+                    <ShoppingBag className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pb-gray">Highway Access</h4>
-                    <p className="text-gray-600">Near I-95 & Palm Beach Lakes Blvd</p>
+                    <h4 className="font-semibold text-pb-gray">Shopping & Retail</h4>
+                    <p className="text-gray-600">PetSmart, Victoria's Secret & more</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
                   <div className="bg-pb-orange text-white rounded-full p-2 mr-4">
-                    <Zap className="h-5 w-5" />
+                    <Coffee className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pb-gray">Golf Club</h4>
-                    <p className="text-gray-600">Across from Dutchman's Pipe Golf Club</p>
+                    <h4 className="font-semibold text-pb-gray">Dining Options</h4>
+                    <p className="text-gray-600">Red Robin Gourmet Burgers & more</p>
                   </div>
                 </div>
                 
@@ -72,54 +73,50 @@ export default function Location() {
                     <Waves className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pb-gray">Palm Beach Lakes</h4>
+                    <h4 className="font-semibold text-pb-gray">Lake Mangonia</h4>
                     <p className="text-gray-600">Beautiful lakeside location</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="bg-gray-600 text-white rounded-full p-2 mr-4">
+                    <Car className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-pb-gray">Highway Access</h4>
+                    <p className="text-gray-600">Easy access to major roads</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="h-96 bg-gradient-to-br from-blue-100 to-green-100 relative p-8">
-                <div className="text-center">
-                  <h4 className="font-bold text-pb-gray mb-6">Location Overview</h4>
+              <div className="p-6">
+                <div className="text-center mb-4">
+                  <h4 className="font-bold text-pb-gray text-xl">Location Overview</h4>
+                  <p className="text-gray-600">See nearby points of interest</p>
                 </div>
                 
-                {/* Woodstock Community - Center */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-pb-blue text-white px-4 py-2 rounded-lg font-semibold text-center shadow-lg">
-                  <svg className="w-5 h-5 mx-auto mb-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                  </svg>
-                  Woodstock<br />Community
+                <div className="relative">
+                  <img 
+                    src={poiMap} 
+                    alt="Woodstock Community location map showing nearby amenities" 
+                    className="w-full h-auto rounded-lg shadow-sm"
+                  />
+                  
+                  {/* Woodstock Location Marker */}
+                  <div className="absolute top-[20%] left-[40%] transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="bg-red-500 text-white p-2 rounded-full shadow-lg animate-bounce">
+                      <MapPin className="w-4 h-4" />
+                    </div>
+                    <div className="absolute top-8 left-1/2 transform -translate-x-1/2 bg-pb-blue text-white px-2 py-1 rounded text-xs font-semibold whitespace-nowrap">
+                      Woodstock
+                    </div>
+                  </div>
                 </div>
                 
-                {/* I-95 Highway */}
-                <div className="absolute top-8 left-8 bg-gray-700 text-white px-3 py-1 rounded text-sm">
-                  <Car className="w-3 h-3 inline mr-1" />
-                  I-95
-                </div>
-                
-                {/* Outlets */}
-                <div className="absolute top-1/4 right-8 bg-pb-orange text-white px-3 py-1 rounded text-sm">
-                  <ShoppingBag className="w-3 h-3 inline mr-1" />
-                  Outlets
-                </div>
-                
-                {/* Golf Club */}
-                <div className="absolute bottom-1/4 left-8 bg-pb-green text-white px-3 py-1 rounded text-sm">
-                  <Zap className="w-3 h-3 inline mr-1" />
-                  Golf Club
-                </div>
-                
-                {/* Palm Beach Lakes */}
-                <div className="absolute bottom-8 right-8 bg-blue-500 text-white px-3 py-1 rounded text-sm">
-                  <Waves className="w-3 h-3 inline mr-1" />
-                  Palm Beach Lakes
-                </div>
-                
-                {/* Palm Beach Lakes Blvd */}
-                <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-600 text-white px-3 py-1 rounded text-sm">
-                  Palm Beach Lakes Blvd
+                <div className="mt-4 text-center">
+                  <p className="text-sm text-gray-600">Walking distance to Bear Lakes Country Club, shopping, dining, and Lake Mangonia</p>
                 </div>
               </div>
             </div>
