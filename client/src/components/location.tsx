@@ -1,5 +1,6 @@
-import { ShoppingBag, Car, Zap, Waves, Coffee, MapPin } from 'lucide-react';
+import { ShoppingBag, Car, Zap, Waves, Coffee, MapPin, Home, Users } from 'lucide-react';
 import poiMap from '@assets/POI-map_1756253610159.jpg';
+import communityLayout from '@assets/Woodstock Parking Lot Map_1756253718224.jpg';
 
 export default function Location() {
   return (
@@ -9,18 +10,58 @@ export default function Location() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-pb-gray mb-4">Community Layout</h2>
-            <p className="text-xl text-gray-600">Discover our thoughtfully designed community spaces</p>
+            <p className="text-xl text-gray-600">Aerial view of our beautifully designed community</p>
           </div>
           
-          <div className="bg-gray-100 rounded-xl p-8 text-center">
-            <div className="bg-white rounded-lg shadow-md p-12 inline-block">
-              <div className="w-16 h-16 mx-auto mb-4 bg-pb-blue rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                </svg>
+          <div className="grid lg:grid-cols-3 gap-8 items-start">
+            {/* Community Features */}
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="flex items-center mb-4">
+                  <div className="bg-pb-blue text-white rounded-full p-3 mr-4">
+                    <Home className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-pb-gray">Multiple Buildings</h3>
+                </div>
+                <p className="text-gray-600">Individual residential buildings spread throughout the community for privacy and comfort</p>
               </div>
-              <p className="text-gray-600 text-lg">Community Layout Map</p>
-              <p className="text-sm text-gray-500 mt-2">(Community layout image will be provided)</p>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="flex items-center mb-4">
+                  <div className="bg-pb-green text-white rounded-full p-3 mr-4">
+                    <Users className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-pb-gray">Community Pool</h3>
+                </div>
+                <p className="text-gray-600">Central swimming pool area for relaxation and community gatherings</p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="flex items-center mb-4">
+                  <div className="bg-pb-orange text-white rounded-full p-3 mr-4">
+                    <Car className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-pb-gray">Parking Areas</h3>
+                </div>
+                <p className="text-gray-600">Convenient parking spaces throughout the community with easy access to all units</p>
+              </div>
+            </div>
+            
+            {/* Aerial Map */}
+            <div className="lg:col-span-2">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-pb-gray mb-4 text-center">Woodstock Community Aerial View</h3>
+                  <img 
+                    src={communityLayout} 
+                    alt="Aerial view of Woodstock Community showing buildings, roads, parking areas, and central pool" 
+                    className="w-full h-auto rounded-lg shadow-sm"
+                  />
+                  <div className="mt-4 text-center">
+                    <p className="text-gray-600">Complete overview showing individual buildings, central amenities, and convenient parking areas</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
