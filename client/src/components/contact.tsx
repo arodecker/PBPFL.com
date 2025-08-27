@@ -75,8 +75,8 @@ export default function Contact() {
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p className="text-blue-100">
-                  Woodstock Community<br />
-                  Palm Beach Lakes, FL
+                  1701 N. Congress - 1921 N. Congress<br />
+                  West Palm Beach, FL 33401
                 </p>
               </div>
             </div>
