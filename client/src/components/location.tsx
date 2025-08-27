@@ -63,7 +63,7 @@ export default function Location() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-pb-gray">Golf Club</h4>
-                    <p className="text-gray-600">Across from Dutchman's Pipe Golf Club</p>
+                    <p className="text-gray-600">Across from Bear Lakes Country Club</p>
                   </div>
                 </div>
                 
@@ -73,7 +73,7 @@ export default function Location() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-pb-gray">Palm Beach Lakes</h4>
-                    <p className="text-gray-600">Beautiful lakeside location</p>
+                    <p className="text-gray-600">Conveniently located near Lake Mangonia and Clear Lake</p>
                   </div>
                 </div>
               </div>
