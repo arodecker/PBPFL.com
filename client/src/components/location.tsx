@@ -146,7 +146,7 @@ export default function Location() {
                   />
                   
                   {/* Woodstock Location Marker */}
-                  <div className="absolute top-[calc(20%+150px)] left-[40%] transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="absolute top-[calc(20%+150px)] left-[calc(40%-100px)] transform -translate-x-1/2 -translate-y-1/2">
                     <div className="bg-red-500 text-white p-2 rounded-full shadow-lg animate-bounce">
                       <MapPin className="w-4 h-4" />
                     </div>
