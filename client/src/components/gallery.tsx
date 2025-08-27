@@ -29,7 +29,6 @@ import img24 from '@assets/PXL_20250115_164242374_1756246319954.jpg';
 import img25 from '@assets/PXL_20250115_164248676_1756246319955.jpg';
 import img26 from '@assets/PXL_20250115_164255867_1756246319955.jpg';
 import img27 from '@assets/PXL_20250115_164300690_1756246319956.jpg';
-import img28 from '@assets/PXL_20250115_164307082_1756246319956.jpg';
 import img29 from '@assets/PXL_20250115_164320355_1756246319957.jpg';
 import img30 from '@assets/PXL_20250115_164328646_1756246319957.jpg';
 import img31 from '@assets/PXL_20250115_164334229_1756246319958.jpg';
@@ -46,8 +45,6 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   // Unit Interior Photos
-  { src: img1, alt: "Unit interior view 1", category: "interior" },
-  { src: img2, alt: "Unit interior view 2", category: "interior" },
   { src: img3, alt: "Unit interior view 3", category: "interior" },
   { src: img4, alt: "Unit interior view 4", category: "interior" },
   { src: img5, alt: "Unit interior view 5", category: "interior" },
@@ -55,37 +52,39 @@ const galleryImages: GalleryImage[] = [
   { src: img7, alt: "Unit interior view 7", category: "interior" },
   { src: img8, alt: "Unit interior view 8", category: "interior" },
   { src: img9, alt: "Unit interior view 9", category: "interior" },
+  { src: img29, alt: "Unit interior view 11", category: "interior" },
+  { src: img30, alt: "Unit interior view 12", category: "interior" },
+  { src: img31, alt: "Unit interior view 13", category: "interior" },
+  { src: img32, alt: "Unit interior view 14", category: "interior" },
+  { src: img33, alt: "Unit interior view 15", category: "interior" },
+  { src: img34, alt: "Unit interior view 16", category: "interior" },
+  { src: img10, alt: "Unit interior view 17", category: "interior" },
+  { src: img11, alt: "Unit interior view 18", category: "interior" },
+  { src: img12, alt: "Unit interior view 19", category: "interior" },
+  { src: img13, alt: "Unit interior view 20", category: "interior" },
+  { src: img14, alt: "Unit interior view 21", category: "interior" },
+  { src: img15, alt: "Unit interior view 22", category: "interior" },
+  { src: img16, alt: "Unit interior view 23", category: "interior" },
+  { src: img17, alt: "Unit interior view 24", category: "interior" },
+  { src: img18, alt: "Unit interior view 25", category: "interior" },
+  { src: img19, alt: "Unit interior view 26", category: "interior" },
+  { src: img20, alt: "Unit interior view 27", category: "interior" },
+  { src: img21, alt: "Unit interior view 28", category: "interior" },
+  { src: img22, alt: "Unit interior view 29", category: "interior" },
+  { src: img23, alt: "Unit interior view 30", category: "interior" },
+  { src: img24, alt: "Unit interior view 31", category: "interior" },
+  { src: img25, alt: "Unit interior view 32", category: "interior" },
+  { src: img26, alt: "Unit interior view 33", category: "interior" },
+  { src: img27, alt: "Unit interior view 34", category: "interior" },
 
   // Exterior Views
-  { src: img10, alt: "Building exterior view 1", category: "exterior" },
-  { src: img11, alt: "Building exterior view 2", category: "exterior" },
-  { src: img12, alt: "Building exterior view 3", category: "exterior" },
-  { src: img13, alt: "Building exterior view 4", category: "exterior" },
-  { src: img14, alt: "Building exterior view 5", category: "exterior" },
-  { src: img15, alt: "Building exterior view 6", category: "exterior" },
-  { src: img16, alt: "Building exterior view 7", category: "exterior" },
-  { src: img17, alt: "Building exterior view 8", category: "exterior" },
-  { src: img18, alt: "Building exterior view 9", category: "exterior" },
+  { src: img1, alt: "Unit exterior view 1", category: "exterior" },
+  { src: img2, alt: "Unit exterior view 2", category: "exterior" },
 
   // Community Spaces
-  { src: img19, alt: "Community space 1", category: "community" },
-  { src: img20, alt: "Community space 2", category: "community" },
-  { src: img21, alt: "Community space 3", category: "community" },
-  { src: img22, alt: "Community space 4", category: "community" },
-  { src: img23, alt: "Community space 5", category: "community" },
-  { src: img24, alt: "Community space 6", category: "community" },
-  { src: img25, alt: "Community space 7", category: "community" },
-  { src: img26, alt: "Community space 8", category: "community" },
-  { src: img27, alt: "Community space 9", category: "community" },
+  // { src: img19, alt: "Community space 1", category: "community" },
 
   // Parking & Grounds
-  { src: img28, alt: "Parking and grounds 1", category: "parking" },
-  { src: img29, alt: "Parking and grounds 2", category: "parking" },
-  { src: img30, alt: "Parking and grounds 3", category: "parking" },
-  { src: img31, alt: "Parking and grounds 4", category: "parking" },
-  { src: img32, alt: "Parking and grounds 5", category: "parking" },
-  { src: img33, alt: "Parking and grounds 6", category: "parking" },
-  { src: img34, alt: "Parking and grounds 7", category: "parking" },
   { src: parkingMap, alt: "Parking lot map", category: "parking" },
 ];
 
