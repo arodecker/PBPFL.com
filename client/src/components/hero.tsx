@@ -1,4 +1,4 @@
-import { Home, Phone, ChevronDown } from 'lucide-react';
+import { Home, Phone, ChevronDown, Mail } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import exteriorImg from '@assets/PXL_20250115_163738473.MP_1756246222394.jpg';
 import interiorImg from '@assets/PXL_20250115_164034355_1756246222400.jpg';
@@ -98,12 +98,14 @@ export default function Hero() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-full">
                   <DropdownMenuItem asChild>
-                    <a href="tel:7144584377" className="w-full cursor-pointer" data-testid="contact-phone">
+                    <a href="tel:7144584377" className="w-full cursor-pointer flex items-center" data-testid="contact-phone">
+                      <Phone className="mr-2 h-4 w-4" />
                       (714) 458-4377
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="mailto:jon@pbpfl.com" className="w-full cursor-pointer" data-testid="contact-email">
+                    <a href="mailto:jon@pbpfl.com" className="w-full cursor-pointer flex items-center" data-testid="contact-email">
+                      <Mail className="mr-2 h-4 w-4" />
                       jon@pbpfl.com
                     </a>
                   </DropdownMenuItem>
