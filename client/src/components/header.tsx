@@ -41,8 +41,14 @@ export default function Header() {
               <button onClick={() => scrollToSection('gallery')} className="text-pb-gray hover:text-pb-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Gallery
               </button>
-              <button onClick={() => scrollToSection('contact')} className="bg-pb-blue text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
-                Contact
+              {/* <button onClick={() => scrollToSection('contact')} className="bg-pb-blue text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"> */}
+              <a href="mailto:jon@pbpfl.com">
+                <button onClick={() => { return true }} className="bg-pb-blue text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+                  Contact
+                </button>
+              </a>
+              <button disabled onClick={() => document.location.href = ''} className="bg-pb-orange text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-600 transition-colors">
+                Apply
               </button>
             </div>
           </div>

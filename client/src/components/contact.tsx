@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p className="text-blue-100">(714) 458-4337</p>
+                <p className="text-blue-100">(714) 458-4377</p>
               </div>
             </div>
             
@@ -64,7 +64,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-blue-100">jreed@ocmortgage.com</p>
+                <p className="text-blue-100">jon@pbpfl.com</p>
               </div>
             </div>
             
@@ -75,7 +75,7 @@ export default function Contact() {
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p className="text-blue-100">
-                  1701 N. Congress - 1921 N. Congress<br />
+                  1899 N. Congress <br />
                   West Palm Beach, FL 33401
                 </p>
               </div>
@@ -97,7 +97,7 @@ export default function Contact() {
           
           <div className="bg-white rounded-xl p-6">
             <h3 className="text-2xl font-bold text-pb-gray mb-6">Request Information</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action="https://formsubmit.co/jon@pbpfl.com" method="POST" className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-pb-gray mb-1">Name</label>
                 <Input
@@ -107,7 +107,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Your full name"
                   required
-                  className="w-full"
+                  className="w-full text-black"
                 />
               </div>
               
@@ -120,7 +120,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="your.email@example.com"
                   required
-                  className="w-full"
+                  className="w-full text-black"
                 />
               </div>
               
@@ -132,7 +132,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="(555) 123-4567"
-                  className="w-full"
+                  className="w-full text-black"
                 />
               </div>
               
@@ -144,7 +144,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Tell us about your housing needs..."
                   rows={4}
-                  className="w-full"
+                  className="w-full text-black"
                 />
               </div>
               

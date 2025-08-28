@@ -38,7 +38,8 @@ export default function Hero() {
               View Floor Plans
             </button>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => document.location.href = 'mailto:jon@pbpfl.com'}
+              // onClick={() => scrollToSection('contact')}
               style={{ backgroundColor: '#808080b3', color: 'white' }}
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-pb-blue transition-colors inline-flex items-center justify-center"
             >
