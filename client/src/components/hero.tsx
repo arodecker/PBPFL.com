@@ -2,7 +2,8 @@ import { Home, Phone, ChevronDown, Mail } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import exteriorImg from '@assets/PXL_20250115_163738473.MP_1756246222394.jpg';
 import interiorImg from '@assets/PXL_20250115_164034355_1756246222400.jpg';
-
+import mainImg from '@assets/main.jpg'
+import fwyIcon from '@assets/I-95.svg';
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -12,16 +13,20 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="py-16 bg-gradient-to-br from-pb-blue to-blue-800">
+    <section id="home" className="py-16 bg-gradient-to-br from-pb-blue to-blue-800"
+      style={{
+        backgroundImage: 'linear-gradient(rgb(171 186 209 / 70%), rgba(255, 255, 255, 0.7)),url(' + mainImg + ')',
+        backgroundSize: 'cover', backgroundPosition: 'center'
+      }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Welcome to the<br />
             <span className="text-pb-orange">Woodstock</span> Community
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          {/* <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             Premier rental community near Palm Beach Lakes, Florida - where comfort meets convenience
-          </p>
+          </p> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -36,15 +41,15 @@ export default function Hero() {
             </div>
             <div className="p-6">
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center text-gray-700">
+                <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-blue rounded-full mr-3"></span>
                   3 bed / 3 bath
                 </li>
-                <li className="flex items-center text-gray-700">
+                <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-blue rounded-full mr-3"></span>
                   1624 Sq. ft.
                 </li>
-                <li className="flex items-center text-gray-700">
+                <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-blue rounded-full mr-3"></span>
                   Private patio / balconies
                 </li>
@@ -71,15 +76,15 @@ export default function Hero() {
             </div>
             <div className="p-6">
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center text-gray-700">
+                <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-green rounded-full mr-3"></span>
                   Inside laundry
                 </li>
-                <li className="flex items-center text-gray-700">
+                <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-green rounded-full mr-3"></span>
-                  PB Lakes / I95
+                  PB Lakes / <img src={fwyIcon} className="ml-2 h-4 w-4" alt="Interstate 95" />
                 </li>
-                <li className="flex items-center text-gray-700">
+                <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-green rounded-full mr-3"></span>
                   $2,500 - 2800 / month
                 </li>
