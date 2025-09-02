@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Camera, Building, Trees, Car, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 // Import gallery images
 import img1 from '@assets/PXL_20250115_163738473.MP_1756246222394.jpg';
@@ -91,6 +92,7 @@ const galleryImages: GalleryImage[] = [
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>('interior');
+  const isMobile = useIsMobile();
 
   const categories = [
     { id: 'interior', name: 'Unit Interior Photos', icon: Camera, color: 'text-pb-blue' },
@@ -103,6 +105,20 @@ export default function Gallery() {
 
   const openLightbox = (image: GalleryImage) => {
     setSelectedImage(image);
+  };
+
+  const handleCategoryClick = (categoryId: string) => {
+    if (isMobile) {
+      // On mobile, open the first image of the selected category directly
+      const categoryImages = galleryImages.filter(img => img.category === categoryId);
+      if (categoryImages.length > 0) {
+        setActiveCategory(categoryId);
+        setSelectedImage(categoryImages[0]);
+      }
+    } else {
+      // On desktop, just change the active category
+      setActiveCategory(categoryId);
+    }
   };
 
   const closeLightbox = () => {
@@ -139,7 +155,7 @@ export default function Gallery() {
             return (
               <button
                 key={category.id}
-                onClick={() => setActiveCategory(category.id)}
+                onClick={() => handleCategoryClick(category.id)}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-semibold transition-colors ${
                   activeCategory === category.id
                     ? 'bg-pb-blue text-white'
@@ -155,7 +171,7 @@ export default function Gallery() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ${isMobile ? 'hidden' : ''}`}>
           {filteredImages.map((image, index) => (
             <div
               key={index}
