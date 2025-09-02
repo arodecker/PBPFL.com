@@ -1,7 +1,7 @@
 import { Home, Phone, ChevronDown, Mail } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import exteriorImg from '@assets/PXL_20250115_163738473.MP_1756246222394.jpg';
-import interiorImg from '@assets/PXL_20250115_164034355_1756246222400.jpg';
+import interiorImg from '@assets/PXL_20250115_163922018_1756246222397.jpg';
 import mainImg from '@assets/main.jpg'
 import fwyIcon from '@assets/I-95.svg';
 export default function Hero() {
@@ -82,7 +82,7 @@ export default function Hero() {
                 </li>
                 <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-green rounded-full mr-3"></span>
-                  PB Lakes / <img src={fwyIcon} className="ml-2 h-4 w-4" alt="Interstate 95" />
+                  PB Lakes / <img src={fwyIcon} className="ml-2 h-7 w-7" alt="Interstate 95" />
                 </li>
                 <li className="flex items-center text-gray-700 text-2xl md:text-2xl">
                   <span className="w-2 h-2 bg-pb-green rounded-full mr-3"></span>
